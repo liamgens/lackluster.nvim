@@ -17,6 +17,20 @@ return function(theme)
             -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-jump2d.md
             spec.co("MiniJump2dSpot", color.gray1, color.lack),
 
+            -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-pick.md
+            spec.co("MiniPickBorder", theme.ui.fg_border, theme.ui.bg_popup),
+            spec.co("MiniPickBorderText", theme.ui.fg_border, theme.ui.bg_popup),
+            spec.fg("MiniPickHeader", theme.ui.fg_title),
+            spec.co("MiniPickMatchCurrent", theme.ui.fg_search, theme.ui.bg_search_cur),
+            spec.fg("MiniPickMatchMarked", color.green),
+            spec.fg("MiniPickMatchRanges", color.blue),
+            spec.co("MiniPickNormal", theme.ui.fg_normal, theme.ui.bg_popup),
+            spec.bg("MiniPickPreviewLine", theme.ui.bg_cursorline),
+            spec.bg("MiniPickPreviewRegion", theme.ui.bg_visual),
+            spec.fg("MiniPickPrompt", theme.ui.fg_normal),
+            spec.fg("MiniPickPromptCaret", theme.ui.fg_search),
+            spec.fg("MiniPickPromptPrefix", theme.ui.fg_title),
+
             -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-starter.md
             spec.co("MiniStarterQuery", color.blue, color.none),
             spec.co("MiniStarterItemPrefix", color.gray6, color.none),
